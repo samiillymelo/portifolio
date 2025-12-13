@@ -39,7 +39,7 @@ Bailarina apaixonada, formada pela prestigiada **Royal Academy of Dance**. Com m
 <div align="center">
   <table>
     <tr>
-      <td align="center"><b>Concurso Balance kids</b><br><img src="https://samiillymelo.github.io/portifolio/image/image3.jpeg"/><br><sub>Coreografia</sub></td>
+      <td align="center"><b>Concurso Balance</b><br><img src="https://samiillymelo.github.io/portifolio/image/image34.jpeg"/><br><sub>Coreografia</sub></td>
       <td align="center"><b>Exame Royal</b><br><img src="https://samiillymelo.github.io/portifolio/image/image41.jpeg"/><br><sub>Técnica</sub></td>
       <td align="center"><b>Processo Criativo</b><br><img src="https://samiillymelo.github.io/portifolio/image/image35.jpeg"/><br><sub>Festival</sub></td>
     </tr>
