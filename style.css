@@ -1,91 +1,151 @@
-/* Seu CSS Personalizado para Design Moderno/Tecnológico (Dark Mode) */
-
-/* Variáveis para cores (Dark Mode Palette) */
+/* ============================================================
+   VARIÁVEIS E CONFIGURAÇÕES APPLE DESIGN
+   ============================================================ */
 :root {
-    --dark-bg: #11051b;        /* Roxo muito escuro/preto para fundo */
-    --card-bg: #1c092c;        /* Roxo escuro para cards */
-    --dark-text: #e0ccf8;      /* Texto claro (quase branco/roxo claro) */
-    --primary-purple: #a855f7; /* Roxo vibrante */
-    --secondary-purple: #7e22ce;
+    --dark-bg: #090212;
+    --card-bg: rgba(26, 11, 46, 0.6);
+    --apple-pink: #ff375f;
+    --apple-purple: #bf5af2;
+    --apple-blue: #0a84ff;
+    --text-main: #e0ccf8;
 }
 
-/* Estilos Globais */
+/* Reset e Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--dark-bg);
-    color: var(--dark-text);
-    transition: background-color 0.5s, color 0.5s;
+    color: var(--text-main);
+    line-height: 1.6;
+    overflow-x: hidden;
 }
 
-/* Estilos de Títulos */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 700;
-}
-
-/* Estilo de Gradiente de Texto */
+/* ============================================================
+   ANIMAÇÕES E GRADIENTES (EFEITO APPLE)
+   ============================================================ */
 .text-gradient {
-    background-image: linear-gradient(to right, var(--secondary-purple), var(--primary-purple), #c084fc);
+    background: linear-gradient(75deg, var(--apple-pink), var(--apple-purple), var(--apple-pink), var(--apple-blue));
+    background-size: 300% 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent; 
+    animation: gradientShift 8s ease infinite;
+    font-weight: 800;
 }
 
-/* Estilo de Título de Seção */
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Títulos de Seção */
 .section-title {
-    font-size: 2rem; /* text-3xl */
-    color: var(--primary-purple);
-    margin-bottom: 1rem;
-    padding-left: 1rem;
-    border-left: 4px solid #7e22ce; /* Cor do gradiente */
+    font-family: 'Cormorant Garamond', serif;
+    background: linear-gradient(to right, #ffffff, var(--apple-pink));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    border-left: 4px solid var(--apple-pink);
+    padding-left: 12px;
+    letter-spacing: -0.01em;
 }
 
-/* Nav links */
-.nav-link {
-    @apply text-purple-400 hover:text-purple-100 transition-colors;
+/* Efeito de Vidro (Glassmorphism) */
+.bg-card-bg {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 55, 95, 0.15);
 }
 
-.nav-link-mobile {
-    @apply text-purple-400 hover:bg-purple-900/50 hover:text-white transition-colors;
+/* ============================================================
+   SEÇÃO SOBRE MIM (FONTE AMPLIADA E DESTAQUES)
+   ============================================================ */
+/* Título "Sobre Mim" com mais destaque */
+#about h2.section-title {
+    font-size: 2.0rem; /* Aumenta o tamanho do título */
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
-/* Chips/Tags de Habilidade */
-.tag-chip {
-    @apply inline-flex items-center px-3 py-1 text-sm font-medium rounded-full bg-purple-900 text-purple-300 border border-purple-700 transition duration-300 hover:bg-purple-800 hover:border-purple-500 shadow-md;
+/* Parágrafo com letra maior e mais legível */
+#about p {
+    font-size: 1.30rem; /* Aumentado para ocupar bem o espaço */
+    line-height: 1.9;
+    font-weight: 300;
+    color: #f3e8ff;
+    text-align: justify;
 }
 
-/* Card de Conquista */
-.achievement-card {
-    @apply bg-purple-900/30 p-6 rounded-xl border border-purple-800 shadow-xl text-center transition-all duration-300 hover:scale-[1.02] hover:bg-purple-900/50;
+/* Destaque para as Palavras-Chave dentro do texto */
+.keyword {
+    color: var(--text-main: #e0ccf8); /* Usa o rosa da Apple */
+    font-weight: 600;
 }
 
-/* Card de Formação */
-.formation-card {
-    @apply bg-purple-900/30 p-5 rounded-xl border-l-4 border-purple-500 shadow-lg transition-all duration-300 hover:border-l-8 hover:bg-purple-900/50;
-}
-
-/* Skill Bar Item */
-.skill-item {
-    @apply text-sm;
-}
-
-
-/* Estilos do Portfólio (Design Moderno de Imagens) */
+/* ============================================================
+   PORTFÓLIO (UNIFORMIZAÇÃO E ZOOM CORRIGIDO)
+   ============================================================ */
 .portfolio-item-card {
-    @apply relative aspect-square w-full overflow-hidden rounded-xl bg-purple-900 group shadow-lg cursor-pointer;
-    border: 2px solid transparent;
-    transition: border 0.3s ease;
-}
-
-.portfolio-item-card:hover {
-    border-color: var(--primary-purple);
+    @apply relative overflow-hidden rounded-xl bg-black group border border-purple-800/30 shadow-lg;
+    aspect-ratio: 1 / 1; /* Mantém o quadrado perfeito */
 }
 
 .portfolio-img {
-    @apply h-full w-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-70 group-hover:opacity-100;
+    width: 100%;
+    height: 100%;
+    /* contain: garante que a foto apareça inteira sem "estourar" ou cortar */
+    object-fit: contain; 
+    background-color: #000; /* Fundo preto para fotos que não são quadradas */
+    @apply transition-transform duration-700 group-hover:scale-105;
 }
 
 .portfolio-overlay {
-    @apply absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500;
+    @apply absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-4;
+}
+
+/* ============================================================
+   COMPONENTES ADICIONAIS
+   ============================================================ */
+
+/* Tags / Chips */
+.tag-chip {
+    @apply inline-flex items-center px-4 py-1.5 rounded-full bg-pink-900/20 text-pink-300 border border-pink-700/30 font-bold uppercase tracking-wider text-[11px] transition-all;
+}
+
+.tag-chip:hover {
+    background: var(--apple-pink);
+    color: white;
+}
+
+/* Cards de Formação e Experiência */
+.formation-card, .achievement-card, .bg-purple-900\/20 {
+    @apply bg-purple-900/20 p-5 rounded-2xl border border-purple-700/30 transition-all duration-300 hover:border-pink-500/50 hover:shadow-lg hover:shadow-pink-500/10;
+}
+
+/* Barras de Skill */
+.skill-item .bg-gradient-to-r {
+    box-shadow: 0 0 10px rgba(255, 55, 95, 0.3);
+}
+
+/* Header Blur */
+header {
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+}
+
+/* Links de Navegação */
+.nav-link {
+    @apply text-purple-300 hover:text-pink-400 transition-colors duration-300;
+}
+
+/* Rodapé */
+footer a i {
+    @apply transition-all duration-300 hover:scale-125 hover:text-pink-500;
 }
