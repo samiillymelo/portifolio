@@ -1,5 +1,6 @@
 <div align="center">
-
+  
+🩰  
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=E91E63&center=true&vCenter=true&width=435&lines=A+arte+através+do+movimento...;Inspirando+vidas+pela+dança.;Excelência+Royal+Academy+of+Dance." alt="Typing SVG" />
 
   <br>
