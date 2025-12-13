@@ -1,6 +1,6 @@
 <div align="center">
   
-  <img src="https://samiillymelo.github.io/portifolio/image/sam.jpg" width="50%" />
+  <img src="https://avatars.githubusercontent.com/u/249394263?v=4" width="50%" />
 
   <br>
 
