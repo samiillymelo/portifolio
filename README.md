@@ -1,10 +1,10 @@
 <div align="center">
-  
-  <img src="https://avatars.githubusercontent.com/u/249394263?v=4" width="40%" />
+
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=E91E63&center=true&vCenter=true&width=435&lines=A+arte+através+do+movimento...;Inspirando+vidas+pela+dança.;Excelência+Royal+Academy+of+Dance." alt="Typing SVG" />
 
   <br>
 
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=E91E63&center=true&vCenter=true&width=435&lines=A+arte+através+do+movimento...;Inspirando+vidas+pela+dança.;Excelência+Royal+Academy+of+Dance." alt="Typing SVG" />
+  <img src="https://avatars.githubusercontent.com/u/249394263?v=4" width="40%" />
 
   <p>
     <img src="https://img.shields.io/badge/📍-Salvador%2C%20Bahia-BD93F9?style=for-the-badge&logoColor=white" />
