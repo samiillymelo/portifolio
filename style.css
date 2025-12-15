@@ -76,17 +76,42 @@ body {
 
 /* Parágrafo com letra maior e mais legível */
 #about p {
-    font-size: 1.30rem; /* Aumentado para ocupar bem o espaço */
+    font-size: 1.15rem; /* Aumentado para ocupar bem o espaço */
     line-height: 1.9;
     font-weight: 300;
     color: #f3e8ff;
     text-align: justify;
 }
 
-/* Destaque para as Palavras-Chave dentro do texto */
+/* Estilo base para o destaque */
 .keyword {
-    color: var(--text-main: #e0ccf8); /* Usa o rosa da Apple */
+    color: #f55e98; /* Um tom dourado/bege elegante (ajuste conforme sua paleta) */
     font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* O efeito de linha sublinhada que aparece */
+.keyword::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #f332f0;
+    transition: width 0.3s ease;
+}
+
+/* Animação ao passar o mouse (Hover) */
+.keyword:hover {
+    color: #f619e7; /* Escurece um pouco ao passar o mouse */
+}
+
+.keyword:hover::after {
+    width: 100%; /* A linha cresce da esquerda para a direita */
 }
 
 /* ============================================================
