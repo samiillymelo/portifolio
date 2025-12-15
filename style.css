@@ -76,7 +76,7 @@ body {
 
 /* Parágrafo com letra maior e mais legível */
 #about p {
-    font-size: 1.15rem; /* Aumentado para ocupar bem o espaço */
+    font-size: 1.05rem; /* Aumentado para ocupar bem o espaço */
     line-height: 1.9;
     font-weight: 300;
     color: #f3e8ff;
