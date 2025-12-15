@@ -3,14 +3,14 @@ const portfolioItems = [
     { src: './image/image3.jpeg', title: 'Baby Class', subtitle: 'Coreografia' },    
     { src: './image/image35.jpeg', title: 'Espetáculo de Ballet', subtitle: 'Iluminação & Palco' },
     { src: './image/imagem4.png', title: 'Ensaios', subtitle: 'Direção Artística' },
-    { src: './image/image16.jpeg', title: 'Espetáculo de Ballet', subtitle: 'Iluminação & Palco' },
+    { src: './image/image16.jpeg', title: 'Espetáculo de Ballet', subtitle: 'Cenário' },
     { src: './image/imagem3.jpeg', title: 'Bastidores de Ensaio', subtitle: 'Processo Criativo' },
     { src: './image/image15.jpeg', title: 'Bastidores de Ensaio', subtitle: 'Processo Criativo' },
     { src: './image/image24.jpeg', title: 'Workshops', subtitle: 'Educadora Convidada' },
     { src: './image/image17.jpeg', title: 'Espetáculo de Ballet', subtitle: 'Iluminação & Palco' },
     { src: './image/image34.jpeg', title: 'Balance', subtitle: 'Competição' },
-    { src: './image/imagem2.jpg', title: 'Espetáculo de Ballet', subtitle: 'Iluminação & Palco' },    
-    { src: './image/image36.jpeg', title: 'Espetáculo de Ballet', subtitle: 'Iluminação & Palco' }
+    { src: './image/imagem2.jpg', title: 'Espetáculo de Ballet', subtitle: 'Iluminação' },    
+    { src: './image/image36.jpeg', title: 'Espetáculo de Ballet', subtitle: 'Palco' }
 ];   
 
 document.addEventListener('DOMContentLoaded', () => {
