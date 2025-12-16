@@ -154,11 +154,6 @@ body {
     @apply bg-purple-900/20 p-5 rounded-2xl border border-purple-700/30 transition-all duration-300 hover:border-pink-500/50 hover:shadow-lg hover:shadow-pink-500/10;
 }
 
-/* Barras de Skill */
-.skill-item .bg-gradient-to-r {
-    box-shadow: 0 0 10px rgba(255, 55, 95, 0.3);
-}
-
 /* Header Blur */
 header {
     -webkit-backdrop-filter: blur(15px);
